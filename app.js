@@ -38,10 +38,11 @@ app.post('/', (req, res) => {
     };
     const jsonData = JSON.stringify(data);
     //mailchimp api
+    //xxxxxx => api key
     const url = "https://us18.api.mailchimp.com/3.0/lists/9dec0cc16a";
     const options = {
         method: 'POST',
-        auth: 'putud:6619c8f625a4d13fafde6ab7b7f27e53-us18'
+        auth: 'putud:xxxxxxxxxxxxxxx'
     };
     const request = https.request(url, options, (response) => {
         if (response.statusCode === 200) {
